@@ -6,6 +6,7 @@ use std::env::args;
 const BUF: usize = 512;
 
 fn main() {
+    println!("Started server");
     if let Err(e) = run() {
         println!("Aborted server with error: {}", e);
     }
